@@ -1,0 +1,267 @@
+|full
+P2Bit1 <= counter:inst5.b1
+R => levelsensitivesrlatch:inst7.R
+P => levelsensitivesrlatch:inst7.P
+S => levelsensitivesrlatch:inst7.S
+O => levelsensitivesrlatch:inst7.O
+L => levelsensitivesrlatch:inst7.L
+RR => levelsensitivesrlatch:inst7.RR
+PP => levelsensitivesrlatch:inst7.PP
+SS => levelsensitivesrlatch:inst7.SS
+OO => levelsensitivesrlatch:inst7.OO
+LL => levelsensitivesrlatch:inst7.LL
+CLK => levelsensitivesrlatch:inst7.CLK
+CLK => inst24.IN0
+P2Bit0 <= counter:inst5.b0
+P1Bit1 <= counter:inst6.b1
+P1Bit0 <= counter:inst6.b0
+whowonA <= WhoWonTo7Segment:inst25.a
+whowonB <= WhoWonTo7Segment:inst25.b
+whowonC <= WhoWonTo7Segment:inst25.c
+whowonD <= WhoWonTo7Segment:inst25.d
+whowonE <= WhoWonTo7Segment:inst25.e
+whowonF <= WhoWonTo7Segment:inst25.f
+whowonG <= WhoWonTo7Segment:inst25.g
+b1 <= whowins:inst.b1
+b0 <= whowins:inst.b0
+LWon <= whatwon:inst28.Lwon
+OWon <= whatwon:inst28.Owon
+SWon <= whatwon:inst28.Swon
+PWon <= whatwon:inst28.Pwon
+RWon <= whatwon:inst28.Rwon
+Draw <= whatwon:inst28.Draw
+StreadyState <= whatwon:inst28.SteadyState
+whatwonA <= WhatWonTo7Segment:inst3.a
+whatwonB <= WhatWonTo7Segment:inst3.b
+whatwonC <= WhatWonTo7Segment:inst3.c
+whatwonD <= WhatWonTo7Segment:inst3.d
+whatwonE <= WhatWonTo7Segment:inst3.e
+whatwonF <= WhatWonTo7Segment:inst3.f
+whatwonG <= WhatWonTo7Segment:inst3.g
+
+
+|full|counter:inst5
+b1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+whowon => inst1.IN0
+CLK => inst5.IN0
+b0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full|whowins:inst
+b1 <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+SS => inst9.IN0
+SS => inst7.IN0
+SS => inst6.IN0
+LL => inst9.IN1
+LL => inst7.IN1
+LL => inst5.IN1
+RR => inst9.IN2
+RR => inst8.IN2
+RR => inst6.IN2
+P => inst4.IN0
+P => inst2.IN3
+P => inst1.IN3
+P => inst.IN3
+O => inst4.IN1
+O => inst3.IN1
+O => inst2.IN1
+O => inst.IN2
+L => inst4.IN2
+L => inst3.IN2
+L => inst2.IN2
+L => inst1.IN2
+S => inst4.IN3
+S => inst3.IN3
+S => inst1.IN1
+S => inst.IN1
+PP => inst8.IN0
+PP => inst7.IN2
+PP => inst5.IN2
+OO => inst8.IN1
+OO => inst6.IN1
+OO => inst5.IN0
+R => inst3.IN0
+R => inst2.IN0
+R => inst1.IN0
+R => inst.IN0
+b0 <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full|levelsensitivesrlatch:inst7
+SynchronizedR <= 74279:inst.Q1
+CLK => inst3.IN0
+R => inst18.IN0
+S => inst20.IN0
+O => inst21.IN0
+P => inst19.IN0
+SynhchronizedP <= 74279:inst.Q2
+SynchronizedS <= 74279:inst.Q3
+SynchronizedO <= 74279:inst.Q4
+SynchronizedL <= 74279:inst29.Q1
+L => inst22.IN0
+PP => inst24.IN0
+SS => inst25.IN0
+RR => inst23.IN0
+SynchronizedRR <= 74279:inst29.Q2
+SynchronizedPP <= 74279:inst29.Q3
+SynchronizedSS <= 74279:inst29.Q4
+SynchronizedOO <= 74279:inst30.Q2
+LL => inst27.IN0
+OO => inst26.IN0
+SynchronizedLL <= 74279:inst30.Q4
+
+
+|full|levelsensitivesrlatch:inst7|74279:inst
+Q1 <= 46.DB_MAX_OUTPUT_PORT_TYPE
+R1N => 11.IN1
+S12N => 28.IN1
+S11N => 28.IN2
+Q2 <= 45.DB_MAX_OUTPUT_PORT_TYPE
+S2N => 13.IN0
+R2N => 12.IN1
+Q3 <= 44.DB_MAX_OUTPUT_PORT_TYPE
+R3N => 14.IN1
+S32N => 27.IN1
+S31N => 27.IN2
+Q4 <= 43.DB_MAX_OUTPUT_PORT_TYPE
+S4N => 16.IN0
+R4N => 15.IN1
+
+
+|full|levelsensitivesrlatch:inst7|74279:inst29
+Q1 <= 46.DB_MAX_OUTPUT_PORT_TYPE
+R1N => 11.IN1
+S12N => 28.IN1
+S11N => 28.IN2
+Q2 <= 45.DB_MAX_OUTPUT_PORT_TYPE
+S2N => 13.IN0
+R2N => 12.IN1
+Q3 <= 44.DB_MAX_OUTPUT_PORT_TYPE
+R3N => 14.IN1
+S32N => 27.IN1
+S31N => 27.IN2
+Q4 <= 43.DB_MAX_OUTPUT_PORT_TYPE
+S4N => 16.IN0
+R4N => 15.IN1
+
+
+|full|levelsensitivesrlatch:inst7|74279:inst30
+Q1 <= 46.DB_MAX_OUTPUT_PORT_TYPE
+R1N => 11.IN1
+S12N => 28.IN1
+S11N => 28.IN2
+Q2 <= 45.DB_MAX_OUTPUT_PORT_TYPE
+S2N => 13.IN0
+R2N => 12.IN1
+Q3 <= 44.DB_MAX_OUTPUT_PORT_TYPE
+R3N => 14.IN1
+S32N => 27.IN1
+S31N => 27.IN2
+Q4 <= 43.DB_MAX_OUTPUT_PORT_TYPE
+S4N => 16.IN0
+R4N => 15.IN1
+
+
+|full|counter:inst6
+b1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+whowon => inst1.IN0
+CLK => inst5.IN0
+b0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full|WhoWonTo7Segment:inst25
+a <= inst.DB_MAX_OUTPUT_PORT_TYPE
+b0 => inst.IN0
+b0 => inst7.IN0
+b0 => inst8.IN1
+b <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+b1 => inst7.IN1
+b1 => inst6.IN0
+b1 => inst8.IN0
+b1 => g.DATAIN
+c <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+d <= inst.DB_MAX_OUTPUT_PORT_TYPE
+e <= inst.DB_MAX_OUTPUT_PORT_TYPE
+f <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+g <= b1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full|whatwon:inst28
+Draw <= inst.DB_MAX_OUTPUT_PORT_TYPE
+b0 => inst.IN0
+b0 => inst28.IN0
+b0 => inst18.IN1
+b0 => inst19.IN1
+b0 => inst20.IN1
+b0 => inst21.IN1
+b0 => inst22.IN1
+b1 => inst.IN1
+b1 => inst28.IN1
+b1 => inst13.IN1
+b1 => inst14.IN1
+b1 => inst15.IN1
+b1 => inst16.IN1
+b1 => inst17.IN1
+SteadyState <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+Lwon <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+L => inst18.IN0
+LL => inst13.IN0
+Owon <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+O => inst19.IN0
+OO => inst14.IN0
+Swon <= inst25.DB_MAX_OUTPUT_PORT_TYPE
+S => inst20.IN0
+SS => inst15.IN0
+Pwon <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+P => inst21.IN0
+PP => inst16.IN0
+Rwon <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+R => inst22.IN0
+RR => inst17.IN0
+
+
+|full|WhatWonTo7Segment:inst3
+a <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+w0 => inst7.IN0
+w0 => inst9.IN1
+w0 => inst2.IN0
+w0 => inst12.IN1
+w0 => inst16.IN0
+w2 => inst3.IN0
+w2 => inst12.IN0
+w2 => inst19.IN1
+b <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+w1 => inst.IN0
+w1 => inst18.IN1
+w1 => inst21.IN0
+c <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+d <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+e <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+f <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+g <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full|74148:inst36
+EON <= 83.DB_MAX_OUTPUT_PORT_TYPE
+1N => 83.IN0
+1N => 103.IN0
+2N => 83.IN1
+2N => 55.IN0
+3N => 83.IN2
+3N => 57.IN0
+0N => 83.IN3
+4N => 83.IN4
+4N => 62.IN0
+5N => 83.IN5
+5N => 106.IN0
+6N => 83.IN6
+6N => 104.IN0
+7N => 107.IN0
+7N => 105.IN0
+EIN => 65.IN0
+GSN <= 84.DB_MAX_OUTPUT_PORT_TYPE
+A0N <= 8.DB_MAX_OUTPUT_PORT_TYPE
+A1N <= 109.DB_MAX_OUTPUT_PORT_TYPE
+A2N <= 9.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,75 @@
+|levelsensitivesrlatch
+SynchronizedR <= 74279:inst.Q1
+CLK => inst3.IN0
+R => inst18.IN0
+S => inst20.IN0
+O => inst21.IN0
+P => inst19.IN0
+SynhchronizedP <= 74279:inst.Q2
+SynchronizedS <= 74279:inst.Q3
+SynchronizedO <= 74279:inst.Q4
+SynchronizedL <= 74279:inst29.Q1
+L => inst22.IN0
+PP => inst24.IN0
+SS => inst25.IN0
+RR => inst23.IN0
+SynchronizedRR <= 74279:inst29.Q2
+SynchronizedPP <= 74279:inst29.Q3
+SynchronizedSS <= 74279:inst29.Q4
+SynchronizedOO <= 74279:inst30.Q2
+LL => inst27.IN0
+OO => inst26.IN0
+SynchronizedLL <= 74279:inst30.Q4
+
+
+|levelsensitivesrlatch|74279:inst
+Q1 <= 46.DB_MAX_OUTPUT_PORT_TYPE
+R1N => 11.IN1
+S12N => 28.IN1
+S11N => 28.IN2
+Q2 <= 45.DB_MAX_OUTPUT_PORT_TYPE
+S2N => 13.IN0
+R2N => 12.IN1
+Q3 <= 44.DB_MAX_OUTPUT_PORT_TYPE
+R3N => 14.IN1
+S32N => 27.IN1
+S31N => 27.IN2
+Q4 <= 43.DB_MAX_OUTPUT_PORT_TYPE
+S4N => 16.IN0
+R4N => 15.IN1
+
+
+|levelsensitivesrlatch|74279:inst29
+Q1 <= 46.DB_MAX_OUTPUT_PORT_TYPE
+R1N => 11.IN1
+S12N => 28.IN1
+S11N => 28.IN2
+Q2 <= 45.DB_MAX_OUTPUT_PORT_TYPE
+S2N => 13.IN0
+R2N => 12.IN1
+Q3 <= 44.DB_MAX_OUTPUT_PORT_TYPE
+R3N => 14.IN1
+S32N => 27.IN1
+S31N => 27.IN2
+Q4 <= 43.DB_MAX_OUTPUT_PORT_TYPE
+S4N => 16.IN0
+R4N => 15.IN1
+
+
+|levelsensitivesrlatch|74279:inst30
+Q1 <= 46.DB_MAX_OUTPUT_PORT_TYPE
+R1N => 11.IN1
+S12N => 28.IN1
+S11N => 28.IN2
+Q2 <= 45.DB_MAX_OUTPUT_PORT_TYPE
+S2N => 13.IN0
+R2N => 12.IN1
+Q3 <= 44.DB_MAX_OUTPUT_PORT_TYPE
+R3N => 14.IN1
+S32N => 27.IN1
+S31N => 27.IN2
+Q4 <= 43.DB_MAX_OUTPUT_PORT_TYPE
+S4N => 16.IN0
+R4N => 15.IN1
+
+

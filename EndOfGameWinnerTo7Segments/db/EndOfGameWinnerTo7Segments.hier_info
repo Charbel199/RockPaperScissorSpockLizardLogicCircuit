@@ -1,0 +1,17 @@
+|EndOfGameWinnerTo7Segments
+a <= P2Bit1.DB_MAX_OUTPUT_PORT_TYPE
+P2Bit1 => a.DATAIN
+P2Bit1 => inst8.IN1
+P2Bit1 => d.DATAIN
+P2Bit1 => e.DATAIN
+b <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+P1Bit1 => inst8.IN0
+P1Bit1 => c.DATAIN
+P1Bit1 => inst.IN0
+c <= P1Bit1.DB_MAX_OUTPUT_PORT_TYPE
+d <= P2Bit1.DB_MAX_OUTPUT_PORT_TYPE
+e <= P2Bit1.DB_MAX_OUTPUT_PORT_TYPE
+f <= <GND>
+g <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+

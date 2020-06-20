@@ -1,0 +1,21 @@
+|WhatWonTo7Segment
+a <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+w0 => inst7.IN0
+w0 => inst9.IN1
+w0 => inst2.IN0
+w0 => inst12.IN1
+w0 => inst16.IN0
+w2 => inst3.IN0
+w2 => inst12.IN0
+w2 => inst19.IN1
+b <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+w1 => inst.IN0
+w1 => inst18.IN1
+w1 => inst21.IN0
+c <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+d <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+e <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+f <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+g <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+
+

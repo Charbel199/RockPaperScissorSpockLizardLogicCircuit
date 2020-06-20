@@ -1,0 +1,40 @@
+|whowins
+b1 <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+SS => inst9.IN0
+SS => inst7.IN0
+SS => inst6.IN0
+LL => inst9.IN1
+LL => inst7.IN1
+LL => inst5.IN1
+RR => inst9.IN2
+RR => inst8.IN2
+RR => inst6.IN2
+P => inst4.IN0
+P => inst2.IN3
+P => inst1.IN3
+P => inst.IN3
+O => inst4.IN1
+O => inst3.IN1
+O => inst2.IN1
+O => inst.IN2
+L => inst4.IN2
+L => inst3.IN2
+L => inst2.IN2
+L => inst1.IN2
+S => inst4.IN3
+S => inst3.IN3
+S => inst1.IN1
+S => inst.IN1
+PP => inst8.IN0
+PP => inst7.IN2
+PP => inst5.IN2
+OO => inst8.IN1
+OO => inst6.IN1
+OO => inst5.IN0
+R => inst3.IN0
+R => inst2.IN0
+R => inst1.IN0
+R => inst.IN0
+b0 <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+
+

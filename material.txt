@@ -1,0 +1,22 @@
+-10 push buttons
+-12+ LEDs (10: Each 2 same color, 1Red 1Green for clock)
+-2x 555 timer + its components(Resistors capacitors,potentiometer?)
+-6x 7segment (Commond cathode)
+-4 74LS279 SR latches
+-6 DFlipFlops
+-5x 4input-OR
+-5x 3input-OR
+-13x 2input-OR
+-2x 5input-NAND
+-1x 3input-NAND
+-29x 2input-NAND
+-4x 2input-NOR
+-5x 2input-AND
+-40x NOT
+-1x 74LS148 ENCODER
+
+-soldering boards
+-Wires
+-Chip Chairs
+-Voltage source?
+-Extra resistors for 7segments

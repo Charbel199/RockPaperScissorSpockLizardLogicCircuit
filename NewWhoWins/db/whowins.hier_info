@@ -1,0 +1,20 @@
+|whowins
+b1 <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+R => inst.IN0
+S => inst2.IN0
+O => inst3.IN0
+SS => inst11.IN1
+SS => inst20.IN1
+L => inst4.IN0
+LL => inst13.IN1
+LL => inst22.IN1
+P => inst1.IN0
+RR => inst12.IN1
+RR => inst21.IN1
+OO => inst15.IN1
+OO => inst18.IN1
+PP => inst14.IN1
+PP => inst19.IN1
+b0 <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,34 @@
+|whatwon
+Draw <= inst.DB_MAX_OUTPUT_PORT_TYPE
+b0 => inst.IN0
+b0 => inst28.IN0
+b0 => inst18.IN1
+b0 => inst19.IN1
+b0 => inst20.IN1
+b0 => inst21.IN1
+b0 => inst22.IN1
+b1 => inst.IN1
+b1 => inst28.IN1
+b1 => inst13.IN1
+b1 => inst14.IN1
+b1 => inst15.IN1
+b1 => inst16.IN1
+b1 => inst17.IN1
+SteadyState <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+Lwon <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+L => inst18.IN0
+LL => inst13.IN0
+Owon <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+O => inst19.IN0
+OO => inst14.IN0
+Swon <= inst25.DB_MAX_OUTPUT_PORT_TYPE
+S => inst20.IN0
+SS => inst15.IN0
+Pwon <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+P => inst21.IN0
+PP => inst16.IN0
+Rwon <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+R => inst22.IN0
+RR => inst17.IN0
+
+

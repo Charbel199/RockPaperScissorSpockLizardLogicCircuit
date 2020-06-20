@@ -1,0 +1,206 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+44
+3700
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+whowins
+# storage
+db|full.(1).cnf
+db|full.(1).cnf
+# case_insensitive
+# source_file
+whowins.bdf
+b25be94ff31e7d25e9bad6986d670a5
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+whowins:inst
+}
+# macro_sequence
+
+# end
+# entity
+counter
+# storage
+db|full.(2).cnf
+db|full.(2).cnf
+# case_insensitive
+# source_file
+counter.bdf
+b58c6ba1181a8e5deab2c1029482b2e
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+counter:inst5
+counter:inst6
+}
+# macro_sequence
+
+# end
+# entity
+WhoWonTo7Segment
+# storage
+db|full.(4).cnf
+db|full.(4).cnf
+# case_insensitive
+# source_file
+whowonto7segment.bdf
+c2e6123a4cacfd7da3306f53b6ea7ff6
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+whowonto7segment:inst25
+}
+# macro_sequence
+
+# end
+# entity
+whatwon
+# storage
+db|full.(5).cnf
+db|full.(5).cnf
+# case_insensitive
+# source_file
+whatwon.bdf
+f3fff4794a24b19a4f2799315061bb36
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+whatwon:inst28
+}
+# macro_sequence
+
+# end
+# entity
+74148
+# storage
+db|full.(6).cnf
+db|full.(6).cnf
+# case_insensitive
+# source_file
+|altera|quartus|libraries|others|maxplus2|74148.bdf
+7c905bf9a5eef8b1629a68bcd5517d
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+74148:inst36
+}
+# macro_sequence
+
+# end
+# entity
+WhatWonTo7Segment
+# storage
+db|full.(7).cnf
+db|full.(7).cnf
+# case_insensitive
+# source_file
+whatwonto7segment.bdf
+da3c1945f44cde5122acb4df854da33
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+whatwonto7segment:inst3
+}
+# macro_sequence
+
+# end
+# entity
+full
+# storage
+db|full.(0).cnf
+db|full.(0).cnf
+# case_insensitive
+# source_file
+full.bdf
+ee376c316bde63d6b9d91187504fd2
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+levelsensitivesrlatch
+# storage
+db|full.(3).cnf
+db|full.(3).cnf
+# case_insensitive
+# source_file
+levelsensitivesrlatch.bdf
+b25c8f22962781a2ade312a8922caf96
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+levelsensitivesrlatch:inst7
+}
+# macro_sequence
+
+# end
+# entity
+74279
+# storage
+db|full.(8).cnf
+db|full.(8).cnf
+# case_insensitive
+# source_file
+|altera|quartus|libraries|others|maxplus2|74279.bdf
+935d33a1539ef3771fa83e48aa87ca16
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+levelsensitivesrlatch:inst7|74279:inst
+levelsensitivesrlatch:inst7|74279:inst29
+levelsensitivesrlatch:inst7|74279:inst30
+}
+# macro_sequence
+
+# end
+# complete
+
